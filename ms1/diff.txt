@@ -1,0 +1,14 @@
+In line number 9 of your output:
+The output should be:
+Error! Input a whole number: -100
+       ^
+But your output is: 
+Error! -100
+       ^
+
+Unmatched character details:
+The character in column 8 is supposed to be:
+  [I] ASCII code(73)
+but you printed
+  [-] ASCII code(45)
+

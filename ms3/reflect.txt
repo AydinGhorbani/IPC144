@@ -1,0 +1,38 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3
+ Full Name  : Aydin Ghorbani
+ Student ID#: 124170226
+ Email      : aghorbani8@myseneca.ca
+ Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+1.The patient number and a specified date (year, month, and day) can be given to remove an appointment in the project's context. Users can use this tool to delete appointments that have been misscheduled or are no longer necessary.
+
+The programme asks the user to enter the patient number and the date of the appointment to be removed when they choose the 'Remove Appointment' option. In order to discover the appointment that corresponds to the given patient number and date, the programme then performs a search through the array of the 'Appointment' structure. A matched appointment is removed from the array if it is discovered by changing its  field to 0 (which represents an empty slot).
+
+The patient number entered is checked to make sure it relates to an active patient before the appointment is removed. This verification is necessary to prevent patients whose appointments have previously been accidentally removed from the 'Patient' structure array. If the patient number entered does not correspond to an active patient, the request to cancel the appointment is rejected, and the user is shown the relevant notice.
+
+The programme looks for the patient who matches the entered patient number in the 'Patient' structure array in order to validate the patient number. When a patient is located, the programme checks to see if the it is set to 1. The request to remove the appointment is rejected if the patient cannot be located or if its field is 0 
+
+In order to remove an appointment, the 'Appointment' structure array must be changed. an appointment that corresponds to its removal is set to 0, and all other appointment fields are reset to their default settings. By doing this, you may make sure that the appointment is no longer seen as being genuine and that it can be replaced with a fresh appointment in the future.
+
+2.function is used to store user input for strings, and the scanf function is used to parse and validate user input for integers. The inputIntPositive and inputIntRange functions have also been utilized to validate user input for integers.
+
+By minimizing the number of scanf function calls, we can ensure that the user input is validated and stored correctly without compromising the program's performance. This approach reduces the risk of unexpected behavior caused by invalid input, thus improving the program's overall stability and reliability. Therefore, minimizing the number of scanf function calls is considered a good practice in C programming and can lead to more efficient and stable programs.
+Keeping the number of scanf function calls to a minimum lowers the possibility of unexpected behaviour brought on by incorrect input and enhances programme efficiency by decreasing the amount of time the programme spends waiting for user input. This is so that the programme will halt and wait for user input before continuing execution because the scanf function has the potential to be a blocking function. We can improve the performance of the programme by reducing the total amount of time spent waiting for user input by minimising the number of scanf function calls.
+
+
+3.Sorting and displaying the appointments in the 'Appointment' structure array are the responsibilities of the sort function, which is situated in the 'view' module. The 'view' module's main duty is to act as an interface between the user and the programme. By enabling the user to view the appointments in a sorted sequence, the sort function enhances the user interface. The relevance of the sort function to the user interface and its independence from other programme functions all played a part in my decision to put it in the "view" module.
+
+Function inputDate: The inputDate function is a component of the 'core' module and is in charge of evaluating and storing user input for the appointment date. The 'core' module includes functions that carry out fundamental duties needed by other programme components. The inputDate method adds to the program's fundamental functionality by validating and saving the user-provided date input. The inputDate function's significance to the program's core operation and its applicability to other functions in the programme were considerations in my decision to include it in the 'core' module.
+
+The removePatient function is situated in the 'core' module since it is in charge of eliminating appointments connected to a particular patient. The 'core' module includes functions that carry out fundamental duties needed by other programme components. By deleting appointments connected to a patient, the removePatient method adds to the program's basic functionality. The removePatient function's significance to the program's core functioning and its applicability to other programme functions both played a role in my decision to include it in the 'core' module. It should also be included in the same module as other functions that edit the array, such as 'addAppointment,' because it modifies the "Appointment" structure array.
+
+
+
