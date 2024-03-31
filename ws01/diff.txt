@@ -1,0 +1,14 @@
+In line number 20 of your output:
+The output should be:
+	have an equal opportunity to develop our talents."
+ ^
+But your output is: 
+	 have an equal opportunity to develop our talents."
+ ^
+
+Unmatched character details:
+The character in column 2 is supposed to be:
+  [h] ASCII code(104)
+but you printed
+  [Space] ASCII code(32)
+

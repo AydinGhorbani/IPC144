@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Aydin Ghorbani
+Student ID#: 124170226
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1) Each one of the mentioned methods has some use in the program. Sometimes the logic requires returning a variable by implementing the body of the function, in this method, the arguments are modifiable using pointers. Most of the functions are designed to be flexible. For example, all the conversions of weight measures accept modified variables and return the operated data, which reduces redundancy.
+On the other hand, some times the logic just needs a simple display. It's even easier when the variables of these functions are unmodifiable, in this case, the function is just a simple printf statement. It is obvious that for now, repeating the logic again is way easier than using functions, and the complexity of the workshop can't be compared to the others, but the importance and pleasure of learning them are more.
+
+
+
+
+2)the only functions using 2 logics are convertLbs and getDoublePositive. Between these two I would chose getDoublePositive because convertLbs just merges two functions and it doesn't even have any operations that is not decleared in the other functions. Even getDoublePositive is not that complicated. The function just validateds the number before getting it. The validation could be declared in main2.c or the starting point, but in my opinion its better to have the validation beside the expected variable.
+
+The function which is very coupling and for me time consuming to understand was calculateReportData. this function has high interfear with other function and hold to many variable in a struct type.
+There should be easier ways to code the definition of this function but according to instructions coupling was the purpose of this function.
+
+
+
+
+3)to make calculateReportData function more efficient we can use the pointer of the variables that we already declared. In that case the repetition and passing the variables and declaring the variables it self will be cut almost to half. the reason is the function can directly access the address of the variable in the memory and we don't need a duplicate of the same address, saved in an other variable in another place of the memory. I think as less as we use NULL the more efficient gets our code.
+
+ 

@@ -1,0 +1,14 @@
+In line number 71 of your output:
+The output should be:
+Enter loop type and the number of times to iterate (Quit=Q0): w0
+                                                              ^
+But your output is: 
+Enter loop type and the number of times to iterate (Quit=Q0): 20
+                                                              ^
+
+Unmatched character details:
+The character in column 63 is supposed to be:
+  [w] ASCII code(119)
+but you printed
+  [2] ASCII code(50)
+

@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Aydin Ghorbani
+Student ID#: 124170226
+Email      : aghorbani8@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1)
+Because flat is stored as a binary type notation on the base of 2, in double we have more bits of memory than the result would be same. But in folat type we can't store more decimal digits than 7 so on the base 2 the calculation will face with a logical error how ever we can prevent this error by setting a range for float.
+printf("1. 17.96 = %.6f (as cents:%d)\n", price1, (int)(price1 * 100));
+The code above will prevent the logical error.
+
+
+
+2)
+Because when we use decimal digits in division or (double) either on operator or integer, we determine that the value should be represented and behaved like a double function.
+Double function can store numbers with decimal digits so even when explicit the variable in an integer the computer will behave with the variable like a double variable.
+
+
+3)
+
+a. The value of result is not determined at the int function. So the value of result in the first line should be entered as a whole number.but in the second line the implicit conversation will take the lava and store in in the result. The stored number will be 72.
+
+b. 1)0,00   2)72  3)0.00  4)72
+
+c.we can conclude that if we want to print the a logical output in printf function we should store the appropriate data in variables either we do math operators on the function the result would be the same. An integer can't be used with lf or f. Other wise we will face with a logical error or the terminal refuses to run the code.

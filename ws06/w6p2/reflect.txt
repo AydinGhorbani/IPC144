@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Aydin Ghorbani
+Student ID#: 124170226
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1) In some lines of code, we need to prompt the user for variables that are required to iterate in the loop, such as in a do-while loop, where we can prompt the user to enter the values first, and then the code will begin to iterate the functions.However, whatever we can do in a do-while loop, we can do it in a while loop, and while is better because it is easier to understand what is happening in the loop and when the loop should end.
+For loop is easier than the others because we have condition, flag, and counter in one line, so you don't have to browse inside the loop in order to do a walkthrough, but there is one drawback to "For" loop. It's a little bit harder to work with when we have lots of "if" statements inside the loop. For example, when I wanted to find out if 'y' existed in the array or not, I wanted to set the counter after a specific if condition, and it was a little bit hard for me to find where the counter would update.
+
+2) It's easy to test and debug syntactic problems because the compiler will put a red or yellow line under the problem, and I can fix the problem if I know the correct syntax or I search online to find the correct syntax. But semantic errors are tricky; for this workshop to find the correct logics for operations and flags for loops, I created another sheet in the VS code, so there is no need to go through all the programme to test it.
+To find the correct operations for year and month, first I checked the output and did some operations on my phone's calculator to understand what was going on, then I tried to put everything I did in my phone into VS Code. It was not very tricky because in previous workshops we did the roundup and used the correct variables to store the data.
+Overall, testing and debugging are not too hard if you know what you're doing in the code.

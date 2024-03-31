@@ -1,0 +1,17 @@
+1. Do you have any previous programming experience? If so, what language(s)? If not, what are your initial thoughts about the C language and this course?
+
+Although I don’t have any programming experience, I’m keen on learning it. I believe the Programming language C is a substructure for learning other languages. It is illustrating how a computer thinks.
+
+
+
+2. Describe your understanding of the compiling process of turning a C text file into an executable program.
+In my opinion, compiling is like translating readable English sentences into machine language. It executes at different levels; syntax plays the rule of grammar, and compilers like VS Code play the rule of Google Translate!
+
+
+
+3. What do you hope to achieve in this course? Describe your goals and expectations.
+
+I'm looking forward to learning all the materials required to be a game programmer. 
+My final goal is to be able to make a world of my own with the rules that i determine 
+and improve it every day in a way that others can feel the same freedom and happiness as i will.
+       

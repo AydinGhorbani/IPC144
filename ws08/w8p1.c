@@ -1,0 +1,127 @@
+/*/////////////////////////////////////////////////////////////////////////
+			  Workshop - #8 (P1)
+Full Name  : Aydin Ghorbani
+Student ID#: 124170226
+Email      : aghorbani8@mysenec.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+#define _CRT_SECURE_NO_WARNINGS
+
+
+// System Libraries
+#include <stdio.h>
+
+
+// User Libraries
+#include "w8p1.h"
+
+// 1. Get user input of int type and validate for a positive non-zero number
+//    (return the number while also assigning it to the pointer argument)
+int getIntPositive(int* intNum){
+	int flag = 1;
+	int inputNum = 0;
+	while (flag)
+	{
+		scanf("%d" , &inputNum);
+		if (inputNum < 1 )
+		{
+			printf("ERROR: Enter a positive value: ");
+		}
+		else if(inputNum>1)
+		{
+			flag = 0;
+			if (intNum !=NULL) {
+				*intNum = inputNum;
+			}
+			
+		}
+    }
+return inputNum;
+}
+
+// 2. Get user input of double type and validate for a positive non-zero number
+//    (return the number while also assigning it to the pointer argument)
+double getDoublePositive(double* doubleNum){
+	int flag = 1;
+	double inputNum = 0.0;
+	while (flag)
+	{
+		scanf("%lf",&inputNum);
+		if (inputNum <1)
+		{
+			printf("ERROR: Enter a positive value: ");
+		}
+		else
+		{
+			flag = 0;
+			if (doubleNum != NULL) 
+			{
+				*doubleNum = inputNum;
+			}
+			return inputNum;
+			
+		}
+    }
+	return 0;
+}
+
+// 3. Opening Message (include the number of products that need entering)
+void openingMessage(const int Num){
+	printf("Cat Food Cost Analysis\n"
+	"======================\n\n");
+	printf("Enter the details for %d dry food bags of product data for analysis.\n"
+	   "NOTE: A 'serving' is 64g\n\n" , Num);
+
+}
+
+
+// 4. Get user input for the details of cat food product
+struct CatFoodInfo getCatFoodInfo(const int itemNum) {
+	struct CatFoodInfo foodOfCat = {0};
+		printf("Cat Food Product #%d\n"
+			   "--------------------\n", itemNum);
+		printf("SKU           : ");
+		getIntPositive(&foodOfCat.sku);
+		printf("PRICE         : $");
+		getDoublePositive(&foodOfCat.price);
+		printf("WEIGHT (LBS)  : ");
+		getDoublePositive(&foodOfCat.weight);
+		printf("CALORIES/SERV.: ");
+		getIntPositive(&foodOfCat.cal);
+		return foodOfCat;
+}
+
+
+
+// 5. Display the formatted table header
+void displayCatFoodHeader(void)
+{
+	printf("SKU         $Price    Bag-lbs Cal/Serv\n");
+	printf("------- ---------- ---------- --------\n");
+}
+
+// 6. Display a formatted record of cat food data
+void displayCatFoodData(const int disSku ,const int disCal,const double* disWeight,const double* disPrice){
+	printf("%07d %10.2lf %10.1lf %8d\n", disSku , *disPrice , *disWeight , disCal);
+}
+
+// 7. Logic entry point
+void start (void){
+	struct CatFoodInfo items[MAX_PRODUCTS] = { {0} };
+	int i = 0;
+	openingMessage(MAX_PRODUCTS);
+	for (i = 0; i < MAX_PRODUCTS; i++) {
+		items[i] = getCatFoodInfo(i + 1);
+		printf("\n");
+	}
+	displayCatFoodHeader();
+	for (i = 0; i < MAX_PRODUCTS; i++) {
+		displayCatFoodData(items[i].sku, items[i].cal, &items[i].weight, &items[i].price);
+	}
+}

@@ -1,0 +1,36 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Aydin Ghorbani
+Student ID#: 124170226
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.First of all, I should admit that in C, it's very important to know what you do. If you go into the problem without any plan, you will be lost inside the loops.
+I wrote at the beginning of the code that everything was required to run the code only once, but when I ran it again with the command "Do another shopping? (0 = NO): 1", I discovered that it has many logic bugs.
+For example, the code skipped the first collections of the loop, so I had to change the variables and play with the while, if, and do while conditions to make the code run the first while connections.
+I spent almost three hours trying to find the correct logic for the "You picked too many... only 5 more %d" part of the program. I shouldn't have taken this long if I had my ideas about the logic written down on paper.
+Finally, to fix this bug, I wrote the values of every variable in every line of the code, and I did it many times with different numbers to find the correct logic and, most importantly, the correct values to exit from every layer of nested loops.
+
+After all, the syntax was simple, but the logic was extremely tricky.
+
+
+
+
+2.It is impossible to run such code without nested loops. However, if we didn't have any nasted loops, the user's options should be limited. All of the scanf functions filled by the user must have the correct value, and if there is an error from the user, the entire code would crash, and it was not even possible to correct the mistake. The code should run again, and all inputs should be entered correctly again. "Do another shopping? (0 = NO): 1" has no meaning in this situation because the values are in their initial state to begin another order, and the programme would skip all the loops, causing the programme to crash or end.
+Another point worth mentioning is that in this case, a large library should be provided by the user with the title "How to use this program"!
+
+
+
+
+3.If we use a series of if structures to code this program, there would be two main problems, in my opinion.
+
+A) If the value of variable 1 fits the first IF condition, the programme would skip the rest of the IFs,  and the programme would end without running the other IF functions.
+
+B) To accommodate all of the loop sequences, we had to create an additional loop structure.
+
+In this situation, the ElseIF structure would run the programme properly at least one time because the C will look for the correct value of the variable to run the related command. If the last IF structure is what we're looking for, all of the IF statements would run to find the last one, but in IF series, we don't have this option.
